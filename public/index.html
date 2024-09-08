@@ -1,8 +1,102 @@
 <!doctype html>
 <head>
     <title> i c o n s </title>
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
 </head>
 
 <body>
-   This is an index page!
+    <div class="row">
+        <div class="image-container"><img id="cloud" src="img/cloud.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="moon" src="img/moon.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="star" src="img/star.png" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="bubble" src="img/bubble.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="eye" src="img/eye.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="hourglass" src="img/hourglass.png" height="200" width="200"/></div>
+        </div>
+
+    <div class="row">
+        <div class="image-container"><img id="book" src="img/book.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="magicball" src="img/magicball.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="jar" src="img/jar.png" height="200" width="200"/></div>
+    </div>
 </body>
+
+<script>
+    const cloud = document.getElementById ('cloud')
+const cloud_audio = new Audio ('sounds/cloud.mp3')
+cloud.onpointerdown = () => {
+    cloud_audio.play ()
+    cloud.src = 'img/cloud2.png'
+    setTimeout (() => cloud.src = 'img/cloud.png', 1000)
+}
+const moon = document.getElementById ('moon')
+const moon_audio = new Audio ('sounds/moon.mp3')
+moon.onpointerdown = () => {
+    moon_audio.play ()
+    moon.src = 'img/moonstar.png'
+    setTimeout (() => moon.src = 'img/cloud.png', 1000)
+}
+const star = document.getElementById ('star')
+const star_audio = new Audio ('sounds/star.mp3')
+star.onpointerdown = () => {
+    star_audio.play ()
+    star.src = 'img/star2.png'
+    setTimeout (() => star.src = 'img/star.png', 1000)
+}
+const bubble = document.getElementById ('bubble')
+const bubble_audio = new Audio ('sounds/bubble.wav')
+bubble.onpointerdown = () => {
+    bubble_audio.play ()
+    bubble.src = 'img/bubble2.png'
+    setTimeout (() => bubble.src = 'img/bubble.png', 1000)
+}
+const eye = document.getElementById ('eye')
+const eye_audio = new Audio ('sounds/eye.wav')
+eye.onpointerdown = () => {
+    eye_audio.play ()
+    eye.src = 'img/eye2.png'
+    setTimeout (() => eye.src = 'img/eye.png', 1000)
+}
+const hourglass = document.getElementById ('hourglass')
+const hourglass_audio = new Audio ('sounds/hourglass.mp3')
+hourglass.onpointerdown = () => {
+    hourglass_audio.play ()
+    hourglass.src = 'img/hourglass2.png'
+    setTimeout (() => hourglass.src = 'img/hourglass.png', 1000)
+}
+const book = document.getElementById ('book')
+const book_audio = new Audio ('sounds/book.wav')
+book.onpointerdown = () => {
+    book_audio.play ()
+    book.src = 'img/book2.png'
+    setTimeout (() => book.src = 'img/hourglass.png', 1000)
+}
+    const magicball = document.getElementById ('magicball')
+const magicball_audio = new Audio ('sounds/magicball.mp3')
+magicball.onpointerdown = () => {
+    magicball_audio.play ()
+    magicball.src = 'img/magicball2.png'
+    setTimeout (() => magicball.src = 'img/magicball.png', 1000)
+}
+const jar = document.getElementById ('jar')
+const jar_audio = new Audio ('sounds/starjar.mp3')
+jar.onpointerdown = () => {
+    jar_audio.play ()
+    jar.src = 'img/jar2.png'
+    setTimeout (() => jar.src = 'img/jar.png', 1000)
+}
+</script>
+
